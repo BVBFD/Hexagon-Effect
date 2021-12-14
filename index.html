@@ -188,5 +188,18 @@
         <div class="hexagon"></div>
       </div>
     </div>
+    <div id="cursor"></div>
+    <script text="text/javascript">
+      let cursor = document.getElementById("cursor");
+      // window.onmousemove = (event) => {
+      //   cursor.style.left = `${event.clientX}px`;
+      //   cursor.style.top = `${event.clientY}px`;
+      // };
+
+      window.addEventListener("mousemove", (event) => {
+        cursor.style.left = `${event.clientX}px`;
+        cursor.style.top = `${event.clientY}px`;
+      });
+    </script>
   </body>
 </html>
